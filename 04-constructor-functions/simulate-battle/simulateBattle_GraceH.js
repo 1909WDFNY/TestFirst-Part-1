@@ -11,8 +11,7 @@ Pokemon.prototype.biteAttack = function() {
 };
 
 Pokemon.prototype.isDefeated = function() {
-    if (this.health >= 1) return false;
-    return true;
+    return this.health <= 0;
 };
 
 //using recursion to continue the battle until one pokemon reaches 0 HP
